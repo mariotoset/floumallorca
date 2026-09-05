@@ -217,30 +217,6 @@
     margin-top: 8px;
   }
 
-  /* PROGRAMME */
-  .programme { display: flex; flex-direction: column; gap: 2px; }
-  .programme-item {
-    display: flex; align-items: center; gap: 32px;
-    background: var(--warm-white); padding: 28px 36px; border-radius: 0;
-    transition: background 0.2s;
-  }
-  .programme-item:first-child { border-radius: 16px 16px 0 0; }
-  .programme-item:last-child { border-radius: 0 0 16px 16px; }
-  .programme-item:hover { background: var(--sand); }
-  .prog-time {
-    font-family: 'Playfair Display', serif;
-    font-size: 18px; color: var(--terracota); min-width: 90px;
-  }
-  .prog-title { font-size: 16px; font-weight: 500; color: var(--bark); }
-  .prog-desc { font-size: 14px; color: var(--text-light); margin-top: 2px; }
-  .prog-dot {
-    width: 9px; height: 9px; border-radius: 50%;
-    background: var(--terracota); flex-shrink: 0;
-  }
-  .programme-item:nth-child(2) .prog-dot { background: var(--gold); }
-  .programme-item:nth-child(3) .prog-dot { background: var(--coral); }
-  .programme-item:nth-child(4) .prog-dot { background: var(--moss); }
-  .programme-item:nth-child(5) .prog-dot { background: var(--terracota); }
 
   /* FOOTER PUBLIC */
   .footer-pub {
@@ -280,7 +256,6 @@
 <nav>
   <div class="logo">fl<span>ou</span></div>
   <div class="nav-links">
-    <a href="#" onclick="scrollToSection('programme')">Programa</a>
     <a href="#" onclick="scrollToSection('entradas')" class="nav-btn">Entradas</a>
   </div>
 </nav>
@@ -356,54 +331,6 @@
         <div class="info-icon">✦</div>
         <h3>Aforo limitado</h3>
         <p>Solo 100 personas — una fiesta íntima, con la energía de estar todos juntos de verdad.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROGRAMME -->
-  <section class="section" id="programme" style="padding-top: 0;">
-    <div class="section-label">Programa del día</div>
-    <h2 class="section-title">¡Así vamos a vibrar!</h2>
-    <div class="programme">
-      <div class="programme-item">
-        <div class="prog-time">16:00</div>
-        <div class="prog-dot"></div>
-        <div>
-          <div class="prog-title">Apertura de puertas</div>
-          <div class="prog-desc">Llegada con buena energía y bienvenida al espacio</div>
-        </div>
-      </div>
-      <div class="programme-item">
-        <div class="prog-time">&nbsp;</div>
-        <div class="prog-dot"></div>
-        <div>
-          <div class="prog-title">Ceremonia de cacao, cantos y ritual de luna llena</div>
-          <div class="prog-desc">Para abrir el corazón antes de soltar el cuerpo</div>
-        </div>
-      </div>
-      <div class="programme-item">
-        <div class="prog-time">&nbsp;</div>
-        <div class="prog-dot"></div>
-        <div>
-          <div class="prog-title">Ecstatic Dance — Sunset Set</div>
-          <div class="prog-desc">Con DJ Edulis, ¡a bailar con el atardecer!</div>
-        </div>
-      </div>
-      <div class="programme-item">
-        <div class="prog-time">&nbsp;</div>
-        <div class="prog-dot"></div>
-        <div>
-          <div class="prog-title">Ecstatic Dance — Night Set</div>
-          <div class="prog-desc">Con DJ Cactus, la fiesta sigue bajo la luna</div>
-        </div>
-      </div>
-      <div class="programme-item">
-        <div class="prog-time">00:00</div>
-        <div class="prog-dot"></div>
-        <div>
-          <div class="prog-title">Cierre</div>
-          <div class="prog-desc">Hasta la próxima luna llena 🌕</div>
-        </div>
       </div>
     </div>
   </section>
