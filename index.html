@@ -24,6 +24,7 @@
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { overflow-x: hidden; }
 
   body {
     font-family: 'DM Sans', sans-serif;
@@ -67,39 +68,31 @@
   .page.active { display: block; }
 
   /* HERO */
-  .hero {
-    min-height: 100vh;
-    display: flex; align-items: center; justify-content: center;
-    position: relative; overflow: hidden;
-    background: #1c2b26 url('assets/hero-portada.jpg') center / cover no-repeat;
-    padding-top: 80px;
+  .hero-banner {
+    width: 100%;
+    line-height: 0;
   }
-  .hero-bg {
-    position: absolute; inset: 0;
-    background:
-      linear-gradient(180deg, rgba(15,25,22,0.5) 0%, rgba(15,25,22,0.4) 50%, rgba(15,25,22,0.6) 100%);
+  .hero-banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .hero-info {
+    background: linear-gradient(160deg, var(--gold) 0%, var(--terracota) 55%, var(--coral) 100%);
+    padding: 56px 24px 64px;
   }
   .hero-content {
     position: relative;
-    text-align: center; max-width: 800px; padding: 0 24px;
-  }
-  .hero-tag {
-    display: inline-block;
-    font-size: 11px; font-weight: 500; letter-spacing: 0.2em;
-    text-transform: uppercase; color: var(--warm-white);
-    border: 1px solid rgba(255,255,255,0.5);
-    background: rgba(255,255,255,0.12);
-    padding: 8px 20px; border-radius: 100px; margin-bottom: 32px;
-    animation: fadeUp 0.8s ease forwards;
+    text-align: center; max-width: 800px; margin: 0 auto; padding: 0 24px;
   }
   .hero-sub {
     font-size: 18px; color: rgba(255,250,240,0.92);
-    font-weight: 400; line-height: 1.7; margin-bottom: 56px;
-    animation: fadeUp 0.8s 0.3s ease both;
+    font-weight: 400; line-height: 1.7; margin-bottom: 40px;
+    animation: fadeUp 0.8s ease both;
   }
   .hero-meta {
     display: flex; gap: 48px; justify-content: center; flex-wrap: wrap;
-    animation: fadeUp 0.8s 0.45s ease both;
+    animation: fadeUp 0.8s 0.15s ease both;
   }
   .hero-meta-item { text-align: center; }
   .hero-meta-label {
@@ -111,9 +104,9 @@
     font-size: 20px; color: var(--warm-white);
   }
   .hero-cta {
-    margin-top: 48px;
+    margin-top: 40px;
     display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
-    animation: fadeUp 0.8s 0.6s ease both;
+    animation: fadeUp 0.8s 0.3s ease both;
   }
   .btn-primary {
     background: var(--warm-white); color: var(--terracota-dark);
@@ -131,19 +124,6 @@
     text-decoration: none; display: inline-block;
   }
   .btn-ghost:hover { border-color: var(--warm-white); background: rgba(255,255,255,0.12); }
-
-  /* SCROLL INDICATOR */
-  .scroll-hint {
-    position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
-    display: flex; flex-direction: column; align-items: center; gap: 8px;
-    color: rgba(255,250,240,0.55); font-size: 11px; letter-spacing: 0.15em;
-    text-transform: uppercase; animation: fadeUp 1s 1s ease both;
-  }
-  .scroll-line {
-    width: 1px; height: 40px;
-    background: linear-gradient(to bottom, rgba(255,250,240,0.5), transparent);
-    animation: scrollPulse 2s ease infinite;
-  }
 
   /* INFO SECTION */
   .section {
@@ -224,14 +204,12 @@
     from { opacity: 0; transform: translateY(24px); }
     to { opacity: 1; transform: translateY(0); }
   }
-  @keyframes scrollPulse {
-    0%, 100% { opacity: 0.4; }
-    50% { opacity: 0.8; }
-  }
 
   /* RESPONSIVE */
   @media (max-width: 768px) {
     nav { padding: 16px 20px; }
+    .hero-meta { flex-direction: column; gap: 20px; }
+    .hero-meta-value { font-size: 17px; word-break: break-word; }
     .nav-links a:not(.nav-btn) { display: none; }
     .section { padding: 64px 20px; }
     .info-grid { grid-template-columns: 1fr; }
@@ -252,10 +230,11 @@
 <div id="page-public" class="page active">
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg"></div>
+  <div class="hero-banner">
+    <img src="assets/hero-banner.jpg" alt="Flou · Ecstatic Dance" class="hero-banner-img">
+  </div>
+  <section class="hero-info">
     <div class="hero-content">
-      <div class="hero-tag">✦ Ecstatic Dance · Mallorca</div>
       <h1 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;">Flou</h1>
       <p class="hero-sub">Ceremonia, cacao y luna llena para abrir el cuerpo<br>y después... ¡a bailar y celebrar en comunidad!</p>
       <div class="hero-meta">
@@ -278,12 +257,7 @@
         <a href="#" onclick="scrollToSection('info')" class="btn-ghost">Descubre más</a>
       </div>
     </div>
-    <div class="scroll-hint">
-      <div class="scroll-line"></div>
-      scroll
-    </div>
   </section>
-
   <!-- INFO -->
   <section class="section" id="info">
     <div class="section-label">El espacio</div>
