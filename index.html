@@ -4,21 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Flou · Ecstatic Dance Mallorca</title>
-<meta name="description" content="FLOU · Ecstatic Dance Mallorca — 26 de septiembre en TANA Mallorca BioHub, Bunyola. Ceremonia de cacao, cantos y ritual de luna llena, seguido de Ecstatic Dance con DJ Cactus. Espacio familiar, sin alcohol. Entradas desde 20€.">
+<meta name="description" content="FLOU · Ecstatic Dance Mallorca — 26 de septiembre en TANA Mallorca BioHub, Bunyola. Cacao ceremonial, música y Ecstatic Dance con DJ Isla Paraíso, Carlos Marcús ft. Sebaï Lumen Music, DJ Cactus y cena con Beldi. Espacio familiar, niños gratis, sin alcohol. Entradas desde 20€.">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Flou">
 <meta property="og:locale" content="es_ES">
 <meta property="og:url" content="https://www.floumallorca.com/">
 <meta property="og:title" content="Flou · Ecstatic Dance Mallorca — 26 Septiembre">
-<meta property="og:description" content="Ceremonia de cacao, cantos y ritual de luna llena, seguido de Ecstatic Dance con DJ Cactus. TANA Mallorca BioHub, Bunyola. Entradas desde 20€.">
+<meta property="og:description" content="Cacao ceremonial, música y Ecstatic Dance con DJ Isla Paraíso, Carlos Marcús ft. Sebaï Lumen Music, DJ Cactus y cena con Beldi. TANA Mallorca BioHub, Bunyola. Entradas desde 20€.">
 <meta property="og:image" content="https://www.floumallorca.com/assets/hero-banner.jpg">
 <meta property="og:image:width" content="1254">
 <meta property="og:image:height" content="770">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Flou · Ecstatic Dance Mallorca — 26 Septiembre">
-<meta name="twitter:description" content="Ceremonia de cacao, cantos y ritual de luna llena, seguido de Ecstatic Dance con DJ Cactus. TANA Mallorca BioHub, Bunyola. Entradas desde 20€.">
+<meta name="twitter:description" content="Cacao ceremonial, música y Ecstatic Dance con DJ Isla Paraíso, Carlos Marcús ft. Sebaï Lumen Music, DJ Cactus y cena con Beldi. TANA Mallorca BioHub, Bunyola. Entradas desde 20€.">
 <meta name="twitter:image" content="https://www.floumallorca.com/assets/hero-banner.jpg">
 
 <script type="application/ld+json">
@@ -31,7 +31,7 @@
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "eventStatus": "https://schema.org/EventScheduled",
   "maxAttendeeCapacity": 150,
-  "description": "Ceremonia de cacao, cantos medicinales y ritual de luna llena, seguido de Ecstatic Dance con DJ Cactus. Espacio familiar, con zona infantil y piscina, evento sin alcohol. Aforo limitado a 150 personas.",
+  "description": "Cacao ceremonial (incluido con la entrada), música del corazón y Ecstatic Dance con DJ Isla Paraíso, Carlos Marcús ft. Sebaï Lumen Music y DJ Cactus, seguido de cena con Beldi. Espacio familiar, niños gratis, con zona infantil y piscina, evento sin alcohol. Aforo limitado a 150 personas.",
   "image": [
     "https://www.floumallorca.com/assets/hero-banner.jpg",
     "https://www.floumallorca.com/assets/tribu.jpg"
@@ -61,10 +61,12 @@
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-07-15T00:00:00+02:00"
   },
-  "performer": {
-    "@type": "PerformingGroup",
-    "name": "DJ Cactus"
-  },
+  "performer": [
+    { "@type": "PerformingGroup", "name": "DJ Isla Paraíso" },
+    { "@type": "PerformingGroup", "name": "Carlos Marcús ft. Sebaï Lumen Music" },
+    { "@type": "PerformingGroup", "name": "DJ Cactus" },
+    { "@type": "PerformingGroup", "name": "Beldi / Beldi Experience" }
+  ],
   "organizer": {
     "@type": "Person",
     "name": "Mario Toset",
@@ -205,6 +207,37 @@
     text-shadow: 1.5px 0 0 rgba(179,157,219,0.4), -1.5px 0 0 rgba(128,222,234,0.4), 0 1.5px 0 rgba(242,169,62,0.25);
   }
 
+  /* PROGRAMA */
+  .programa-list {
+    display: flex; flex-direction: column; gap: 20px;
+  }
+  .programa-item {
+    display: flex; gap: 20px; align-items: baseline;
+    padding: 22px 24px;
+    background: var(--warm-white);
+    border: 1px solid rgba(232,112,60,0.18);
+    border-radius: 16px;
+  }
+  .programa-time {
+    font-family: 'Playfair Display', serif;
+    font-style: italic; font-weight: 700;
+    font-size: 22px; color: var(--terracota);
+    min-width: 64px; flex-shrink: 0;
+  }
+  .programa-info h3 {
+    font-size: 17px; color: var(--bark); font-weight: 700; margin-bottom: 4px;
+  }
+  .programa-info p {
+    font-size: 14px; color: var(--text-mid); line-height: 1.5;
+  }
+  .programa-perks {
+    margin-top: 32px; text-align: center;
+    font-size: 14px; color: var(--text-mid);
+  }
+  @media (max-width: 600px) {
+    .programa-item { flex-direction: column; gap: 6px; }
+  }
+
   /* TRIBU */
   .tribu-section { text-align: center; }
   .tribu-photo {
@@ -316,6 +349,44 @@
       </div>
     </div>
   </section>
+
+  <!-- PROGRAMA -->
+  <section class="section programa-section" id="programa">
+    <div class="section-label">Programa</div>
+    <h2 class="section-title">¿Qué vamos<br>a vivir?</h2>
+    <div class="programa-list">
+      <div class="programa-item">
+        <div class="programa-time">17:00</div>
+        <div class="programa-info">
+          <h3>DJ Isla Paraíso</h3>
+          <p>Vinyl &amp; CD Unique Sessions — abre la tarde y ameniza durante todo el evento.</p>
+        </div>
+      </div>
+      <div class="programa-item">
+        <div class="programa-time">18:30</div>
+        <div class="programa-info">
+          <h3>Cacao ceremonial y música del corazón</h3>
+          <p>Apertura del espacio con Carlos Marcús ft. Sebaï Lumen Music. Cacao ceremonial incluido con tu entrada.</p>
+        </div>
+      </div>
+      <div class="programa-item">
+        <div class="programa-time">20:00</div>
+        <div class="programa-info">
+          <h3>Ecstatic Dance con DJ Cactus</h3>
+          <p>El viaje musical central de la noche — a bailar sin parar.</p>
+        </div>
+      </div>
+      <div class="programa-item">
+        <div class="programa-time">22:00</div>
+        <div class="programa-info">
+          <h3>Cena con Beldi · Habibi Food</h3>
+          <p>Sabores de Marruecos con productos de Mallorca, para compartir y disfrutar.</p>
+        </div>
+      </div>
+    </div>
+    <p class="programa-perks">🍉 Fruta y agua gratis para todos &middot; 👨‍👩‍👧 Niños entran gratis, con acompañante durante todo el evento</p>
+  </section>
+
   <!-- TRIBU -->
   <section class="section tribu-section" id="tribu">
     <h2 class="section-title">¡Únete a la tribu!</h2>
