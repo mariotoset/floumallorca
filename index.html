@@ -93,6 +93,8 @@
     --text-light: #b8987c;
     --glow-violet: #b39ddb;
     --glow-turquoise: #80deea;
+    --teal-deep: #1f6f63;
+    --teal-soft: #4a9b8e;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -100,7 +102,14 @@
 
   body {
     font-family: 'DM Sans', sans-serif;
-    background: var(--cream);
+    background: linear-gradient(180deg,
+      var(--cream) 0%,
+      #d9e6df 12%,
+      #cddfd6 24%,
+      var(--cream) 40%,
+      #fadeb4 58%,
+      #fadac7 72%,
+      var(--cream) 90%);
     color: var(--text-dark);
     min-height: 100vh;
   }
