@@ -247,6 +247,19 @@
     .programa-item { flex-direction: column; gap: 6px; }
   }
 
+  /* VIDEO */
+  .video-section { text-align: center; padding-bottom: 40px; }
+  .flou-video {
+    display: block;
+    max-width: 360px;
+    width: 100%;
+    aspect-ratio: 864 / 1080;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid rgba(232,112,60,0.25);
+    box-shadow: 0 20px 40px -12px rgba(74,48,32,0.3);
+  }
+
   /* TRIBU */
   .tribu-section { text-align: center; }
   .tribu-photo {
@@ -357,6 +370,13 @@
         <a href="https://brainpas.com/events/138f79eb-bcd8-4227-87c2-96fefcbaa924" target="_blank" rel="noopener" class="btn-primary">¡Quiero mi entrada!</a>
       </div>
     </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="section video-section">
+    <video class="flou-video" controls playsinline preload="metadata" poster="assets/hero-banner.jpg">
+      <source src="assets/flou-video.mp4" type="video/mp4">
+    </video>
   </section>
 
   <!-- PROGRAMA -->
