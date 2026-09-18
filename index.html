@@ -262,6 +262,37 @@
 
   /* TRIBU */
   .tribu-section { text-align: center; }
+  .whatsapp-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 28px;
+    padding: 18px 32px;
+    background: linear-gradient(135deg, rgba(140,170,116,0.16), rgba(242,169,62,0.10));
+    border: 1.5px solid var(--moss);
+    border-radius: 100px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .whatsapp-badge-icon {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .whatsapp-badge-text {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.35;
+    color: var(--bark);
+    text-align: left;
+  }
+  .whatsapp-badge:hover {
+    border-color: var(--terracota);
+    background: linear-gradient(135deg, rgba(140,170,116,0.24), rgba(242,169,62,0.16));
+    box-shadow: 0 0 22px 3px rgba(179,157,219,0.35), 0 0 36px 9px rgba(128,222,234,0.2);
+    transform: translateY(-2px);
+  }
   .tribu-photo {
     display: block;
     max-width: 100%;
@@ -420,7 +451,10 @@
   <section class="section tribu-section" id="tribu">
     <h2 class="section-title">¡Únete a la tribu!</h2>
     <img src="assets/tribu.jpg" alt="La tribu de Flou" class="tribu-photo">
-    <p style="margin-top:20px; font-size:15px;"><a href="https://chat.whatsapp.com/Hai5Ddr8bKoGeg4b7ib6Fi" target="_blank" rel="noopener" style="color:var(--terracota); text-decoration:underline; text-underline-offset:3px; font-weight:600;">💬 Canal de difusión WhatsApp FLOU</a></p>
+    <a href="https://chat.whatsapp.com/Hai5Ddr8bKoGeg4b7ib6Fi" target="_blank" rel="noopener" class="whatsapp-badge">
+      <span class="whatsapp-badge-icon">💬</span>
+      <span class="whatsapp-badge-text">Canal de difusión<br>WhatsApp FLOU</span>
+    </a>
   </section>
   <!-- ENTRADAS -->
   <section class="section" id="entradas" style="padding-top:0;">
