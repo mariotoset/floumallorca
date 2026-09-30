@@ -266,6 +266,52 @@
     box-shadow: 0 20px 40px -12px rgba(74,48,32,0.3);
   }
 
+  /* CON-SENTIMIENTOS */
+  .section.reglas-section { padding: 8px 24px 40px; }
+  .reglas-card {
+    position: relative; max-width: 540px; margin: 0 auto; text-align: center;
+    padding: 46px 30px 40px;
+    background: linear-gradient(180deg, rgba(255,250,240,0.94), rgba(253,243,226,0.88));
+    border: 1.5px solid var(--gold); border-radius: 30px;
+    box-shadow: 0 18px 40px -16px rgba(74,48,32,0.28),
+                inset 0 0 0 6px rgba(255,250,240,0.95),
+                inset 0 0 0 7px rgba(232,112,60,0.4);
+  }
+  .reglas-corner { position: absolute; font-size: 15px; line-height: 1; color: var(--terracota); opacity: 0.85; }
+  .reglas-corner.tl { top: 17px; left: 20px; }
+  .reglas-corner.tr { top: 17px; right: 20px; }
+  .reglas-corner.bl { bottom: 17px; left: 20px; }
+  .reglas-corner.br { bottom: 17px; right: 20px; }
+  .reglas-title {
+    font-family: 'Playfair Display', serif; font-weight: 700; color: var(--bark);
+    font-size: clamp(28px, 7vw, 40px); letter-spacing: 0.04em; line-height: 1.15;
+  }
+  .reglas-title span { color: var(--terracota); font-style: italic; }
+  .reglas-sub {
+    font-family: 'Playfair Display', serif; font-style: italic;
+    font-size: 19px; color: var(--text-mid); margin: 6px 0 26px;
+  }
+  .reglas-list { list-style: none; max-width: 340px; margin: 0 auto; }
+  .reglas-list li {
+    font-size: 18px; color: var(--text-dark); padding: 11px 0;
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+  }
+  .reglas-list li + li { border-top: 1px solid rgba(232,112,60,0.18); }
+  .reglas-list li::before { content: '✦'; color: var(--gold); font-size: 12px; }
+  .reglas-cierre {
+    margin-top: 30px; font-weight: 700; font-size: 19px; letter-spacing: 0.38em;
+    padding-left: 0.38em; color: var(--terracota);
+    background: linear-gradient(90deg, var(--terracota-dark), var(--terracota) 50%, var(--gold));
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  @media (max-width: 480px) {
+    .reglas-card { padding: 40px 20px 34px; }
+    .reglas-title { font-size: 23px; letter-spacing: 0.02em; }
+    .reglas-sub { font-size: 17px; }
+    .reglas-list li { font-size: 16.5px; gap: 10px; }
+    .reglas-cierre { font-size: 17px; letter-spacing: 0.3em; padding-left: 0.3em; }
+  }
+
   /* TRIBU */
   .tribu-section { text-align: center; }
   .whatsapp-badge {
@@ -472,6 +518,24 @@
       </div>
     </div>
     <p class="programa-perks">👧👦 Habrá un espacio cuidado para los niños, con una persona acompañante durante todo el evento.<br>🍉💧 Fruta y agua gratis durante todo el evento.</p>
+  </section>
+
+  <!-- CON-SENTIMIENTOS -->
+  <section class="section reglas-section" id="consentimientos">
+    <div class="reglas-card">
+      <span class="reglas-corner tl">✦</span><span class="reglas-corner tr">✦</span>
+      <span class="reglas-corner bl">✦</span><span class="reglas-corner br">✦</span>
+      <h2 class="reglas-title">CON-<span>SENTIMIENTOS</span></h2>
+      <p class="reglas-sub">en la pista de baile:</p>
+      <ul class="reglas-list">
+        <li>Sin hablar</li>
+        <li>Sin alcohol ni drogas</li>
+        <li>Sin fotos ni videos</li>
+        <li>Sin juzgar</li>
+        <li>Con respeto y consentimiento</li>
+      </ul>
+      <p class="reglas-cierre">BAILA LIBRE</p>
+    </div>
   </section>
 
   <!-- TRIBU -->
