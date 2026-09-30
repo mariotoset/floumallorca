@@ -104,11 +104,12 @@
     font-family: 'DM Sans', sans-serif;
     background: linear-gradient(180deg,
       var(--cream) 0%,
-      #accbbc 10%,
-      #83aa9c 22%,
-      var(--cream) 38%,
-      #f8ce90 55%,
-      #f7c6b1 68%,
+      #accbbc 6%,
+      #83aa9c 12%,
+      #c8ddd2 20%,
+      var(--cream) 34%,
+      #f8ce90 50%,
+      #f7c6b1 65%,
       var(--cream) 85%);
     color: var(--text-dark);
     min-height: 100vh;
@@ -171,7 +172,7 @@
     margin-bottom: 40px; text-shadow: 0 2px 14px rgba(120,50,20,0.25);
     animation: fadeUp 0.8s ease both;
   }
-  .section.tagline-section { text-align: center; padding: 16px 24px 0; }
+  .section.tagline-section { text-align: center; padding: 56px 24px 0; }
   .tagline {
     font-size: clamp(20px, 4.8vw, 30px); font-weight: 500; line-height: 1.45;
     color: var(--bark);
@@ -251,19 +252,6 @@
   }
   @media (max-width: 600px) {
     .programa-item { flex-direction: column; gap: 6px; }
-  }
-
-  /* VIDEO */
-  .video-section { text-align: center; padding-bottom: 40px; }
-  .flou-video {
-    display: block;
-    max-width: 360px;
-    width: 100%;
-    aspect-ratio: 864 / 1080;
-    margin: 0 auto;
-    border-radius: 20px;
-    border: 1px solid rgba(232,112,60,0.25);
-    box-shadow: 0 20px 40px -12px rgba(74,48,32,0.3);
   }
 
   /* CON-SENTIMIENTOS */
@@ -465,13 +453,6 @@
         <a href="https://brainpas.com/events/138f79eb-bcd8-4227-87c2-96fefcbaa924" target="_blank" rel="noopener" class="btn-primary">¡Quiero mi entrada!</a>
       </div>
     </div>
-  </section>
-
-  <!-- VIDEO -->
-  <section class="section video-section">
-    <video class="flou-video" controls playsinline preload="metadata" poster="assets/hero-banner.jpg">
-      <source src="assets/flou-video.mp4" type="video/mp4">
-    </video>
   </section>
 
   <section class="section tagline-section">
