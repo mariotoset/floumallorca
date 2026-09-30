@@ -168,13 +168,13 @@
   .hero-intro {
     font-family: 'Playfair Display', serif; font-style: italic; font-weight: 700;
     font-size: clamp(28px, 6.2vw, 46px); line-height: 1.2; color: var(--warm-white);
-    margin-bottom: 22px; text-shadow: 0 2px 14px rgba(120,50,20,0.25);
+    margin-bottom: 40px; text-shadow: 0 2px 14px rgba(120,50,20,0.25);
     animation: fadeUp 0.8s ease both;
   }
-  .hero-sub {
-    font-size: 18px; color: rgba(255,250,240,0.92);
-    font-weight: 400; line-height: 1.7; margin-bottom: 40px;
-    animation: fadeUp 0.8s ease both;
+  .section.tagline-section { text-align: center; padding: 16px 24px 0; }
+  .tagline {
+    font-size: clamp(20px, 4.8vw, 30px); font-weight: 500; line-height: 1.45;
+    color: var(--bark);
   }
   .hero-meta {
     display: flex; gap: 48px; justify-content: center; flex-wrap: wrap;
@@ -388,7 +388,6 @@
     <div class="hero-content">
       <h1 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;">Flou</h1>
       <h2 class="hero-intro">Un espacio para bailar, sentir y conectar</h2>
-      <p class="hero-sub">🍃 Naturaleza, Conexión, Música y Baile! 🔥</p>
       <div class="hero-meta">
         <div class="hero-meta-item">
           <div class="hero-meta-label">Próxima fecha</div>
@@ -415,6 +414,10 @@
     <video class="flou-video" controls playsinline preload="metadata" poster="assets/hero-banner.jpg">
       <source src="assets/flou-video.mp4" type="video/mp4">
     </video>
+  </section>
+
+  <section class="section tagline-section">
+    <p class="tagline">🍃 Naturaleza, Conexión, Música y Baile! 🔥</p>
   </section>
 
   <!-- PROGRAMA -->
