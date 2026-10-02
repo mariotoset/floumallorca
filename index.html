@@ -6,21 +6,21 @@
 <title>Flou · Ecstatic Dance Mallorca</title>
 <meta name="google-site-verification" content="Djj5HgewAuB0UF7SCY9ZEoS5ceS2rChCkzbW4Zowx50" />
 <link rel="canonical" href="https://www.floumallorca.com/">
-<meta name="description" content="Ecstatic dance en Mallorca: danza libre en comunidad, cacao ceremonial y música consciente en TANA, Bunyola. Entradas desde 20€.">
+<meta name="description" content="Ecstatic dance en Mallorca: danza libre en comunidad, cacao ceremonial y música consciente en TANA, Bunyola. Entradas desde 18€.">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Flou">
 <meta property="og:locale" content="es_ES">
 <meta property="og:url" content="https://www.floumallorca.com/">
 <meta property="og:title" content="Flou · Ecstatic Dance Mallorca — 31 Octubre">
-<meta property="og:description" content="Ecstatic dance en Mallorca: danza libre en comunidad, cacao ceremonial y música consciente en TANA, Bunyola. Entradas desde 20€.">
+<meta property="og:description" content="Ecstatic dance en Mallorca: danza libre en comunidad, cacao ceremonial y música consciente en TANA, Bunyola. Entradas desde 18€.">
 <meta property="og:image" content="https://www.floumallorca.com/assets/hero-banner.jpg">
 <meta property="og:image:width" content="1254">
 <meta property="og:image:height" content="770">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Flou · Ecstatic Dance Mallorca — 31 Octubre">
-<meta name="twitter:description" content="Ecstatic dance en Mallorca: danza libre en comunidad, cacao ceremonial y música consciente en TANA, Bunyola. Entradas desde 20€.">
+<meta name="twitter:description" content="Ecstatic dance en Mallorca: danza libre en comunidad, cacao ceremonial y música consciente en TANA, Bunyola. Entradas desde 18€.">
 <meta name="twitter:image" content="https://www.floumallorca.com/assets/hero-banner.jpg">
 
 <script type="application/ld+json">
@@ -58,7 +58,7 @@
   "offers": {
     "@type": "Offer",
     "url": "https://brainpas.com/events/138f79eb-bcd8-4227-87c2-96fefcbaa924",
-    "price": "20",
+    "price": "18",
     "priceCurrency": "EUR",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-07-15T00:00:00+02:00"
@@ -450,22 +450,50 @@
 
   /* TICKET CALLOUT */
   .ticket-callout {
-    background: linear-gradient(180deg, rgba(232,112,60,0.12), var(--warm-white));
-    border: 1px solid rgba(232,112,60,0.35);
-    border-radius: 20px;
-    padding: 48px 32px;
-    text-align: center;
+    position: relative; overflow: hidden; text-align: center; color: var(--warm-white);
+    padding: 52px 28px 44px; border-radius: 26px;
+    background:
+      radial-gradient(ellipse at 50% 108%, rgba(239,130,103,0.55), rgba(242,169,62,0.18) 38%, transparent 66%),
+      radial-gradient(circle at 50% 38%, #2a8576 0%, #1b5f58 42%, #0e3a38 100%);
+    border: 2px solid var(--gold);
+    box-shadow: 0 0 0 5px rgba(242,169,62,0.16), 0 26px 50px -18px rgba(11,48,48,0.65), 0 0 36px -6px rgba(242,169,62,0.4);
   }
+  .ticket-callout::before {
+    content: ''; position: absolute; inset: 9px; border-radius: 19px; z-index: 1; pointer-events: none;
+    border: 1px solid rgba(242,169,62,0.6);
+  }
+  .ticket-mandala {
+    position: absolute; left: 50%; top: 42%; width: 520px; height: 520px; z-index: 0; pointer-events: none;
+    opacity: 0.32; transform: translate(-50%, -50%);
+    animation: mandalaSpin 150s linear infinite;
+  }
+  .ticket-callout .reglas-corner { color: var(--gold); opacity: 1; z-index: 2; }
+  .ticket-callout > *:not(.ticket-mandala):not(.reglas-corner) { position: relative; z-index: 2; }
+  .ticket-callout-aforo {
+    font-size: 13px; text-transform: uppercase; letter-spacing: 0.22em; font-weight: 700; line-height: 1.6;
+    color: var(--gold);
+  }
+  .ticket-callout-sep { margin: 14px auto 12px; color: var(--gold); font-size: 13px; letter-spacing: 0.9em; padding-left: 0.9em; }
   .ticket-callout-label {
-    font-size: 13px; text-transform: uppercase; letter-spacing: 0.15em;
-    color: var(--terracota); font-weight: 500;
+    font-size: 12px; text-transform: uppercase; letter-spacing: 0.3em; font-weight: 500;
+    color: rgba(255,250,240,0.85);
   }
   .ticket-callout-price {
     font-family: 'Playfair Display', serif;
     font-style: italic; font-weight: 700;
-    font-size: 64px; color: var(--bark);
-    margin-top: 8px;
+    font-size: 92px; line-height: 1.05; margin-top: 6px; color: var(--gold);
+    text-shadow: 0 2px 18px rgba(242,169,62,0.45), 2px 0 0 rgba(128,222,234,0.55), -2px 0 0 rgba(179,157,219,0.55);
   }
+  .ticket-btn {
+    display: inline-block; margin-top: 24px; padding: 17px 44px; border-radius: 100px;
+    background: linear-gradient(135deg, #ffd27a, var(--gold) 55%, #ef8267);
+    color: #0e3a38; font-size: 15px; font-weight: 700; letter-spacing: 0.08em; text-decoration: none; text-transform: uppercase;
+    box-shadow: 0 0 0 3px rgba(255,250,240,0.18), 0 10px 26px -8px rgba(242,169,62,0.75), 0 0 28px rgba(242,169,62,0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .ticket-btn:hover { transform: translateY(-2px); box-shadow: 0 0 0 3px rgba(255,250,240,0.3), 0 14px 30px -8px rgba(242,169,62,0.9), 0 0 36px rgba(242,169,62,0.6); }
+  .ticket-ig { margin-top: 22px; color: rgba(255,250,240,0.85); font-size: 15px; }
+  .ticket-ig a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
 
 
   /* FOOTER PUBLIC */
@@ -502,7 +530,7 @@
 
   @media (prefers-reduced-motion: reduce) {
     .section-title, .btn-primary, .nav-btn { transition: none; }
-    .hero-mandala, .hero-orb, .emblem-halo, .emblem-mandala, .emblem-star { animation: none; }
+    .hero-mandala, .hero-orb, .emblem-halo, .emblem-mandala, .emblem-star, .ticket-mandala { animation: none; }
   }
   /* RESPONSIVE */
   @media (max-width: 768px) {
@@ -695,11 +723,15 @@
     <div class="section-label">Entradas</div>
     <h2 class="section-title">¡Nos vemos<br>en la pista!</h2>
     <div class="ticket-callout">
-      <div class="ticket-callout-label" style="font-weight:700;">Aforo limitado a 150 personas</div>
-      <div class="ticket-callout-label" style="margin-top:14px;">Entradas desde</div>
-      <div class="ticket-callout-price">20€</div>
-      <a href="https://brainpas.com/events/138f79eb-bcd8-4227-87c2-96fefcbaa924" target="_blank" rel="noopener" style="display:inline-block;margin-top:20px;background:var(--terracota);color:white;padding:16px 40px;border-radius:100px;font-size:15px;font-weight:700;letter-spacing:0.05em;text-decoration:none;transition:background 0.2s;">Comprar entradas</a>
-      <p style="margin-top:16px; color:var(--text-mid); font-size:15px;">Síguenos en Instagram <a href="https://instagram.com/floumallorca" target="_blank" rel="noopener" style="color:var(--terracota);">@floumallorca</a></p>
+      <svg class="ticket-mandala" viewBox="0 0 400 400" aria-hidden="true" fill="none" stroke="#f2a93e" stroke-width="1.1"><circle cx="200" cy="200" r="48"/><circle cx="248" cy="200" r="48"/><circle cx="224" cy="242" r="48"/><circle cx="176" cy="242" r="48"/><circle cx="152" cy="200" r="48"/><circle cx="176" cy="158" r="48"/><circle cx="224" cy="158" r="48"/><circle cx="296" cy="200" r="48"/><circle cx="248" cy="283" r="48"/><circle cx="152" cy="283" r="48"/><circle cx="104" cy="200" r="48"/><circle cx="152" cy="117" r="48"/><circle cx="248" cy="117" r="48"/><circle cx="272" cy="242" r="48"/><circle cx="200" cy="283" r="48"/><circle cx="128" cy="242" r="48"/><circle cx="128" cy="158" r="48"/><circle cx="200" cy="117" r="48"/><circle cx="272" cy="158" r="48"/><circle cx="200" cy="200" r="144"/><circle cx="200" cy="200" r="190" stroke-dasharray="2 7"/></svg>
+      <span class="reglas-corner tl">✦</span><span class="reglas-corner tr">✦</span>
+      <span class="reglas-corner bl">✦</span><span class="reglas-corner br">✦</span>
+      <div class="ticket-callout-aforo">Aforo limitado<br>a 150 personas</div>
+      <div class="ticket-callout-sep" aria-hidden="true">✦ ✦ ✦</div>
+      <div class="ticket-callout-label">Entradas desde</div>
+      <div class="ticket-callout-price">18€</div>
+      <a href="https://brainpas.com/events/138f79eb-bcd8-4227-87c2-96fefcbaa924" target="_blank" rel="noopener" class="ticket-btn">Comprar entradas</a>
+      <p class="ticket-ig">Síguenos en Instagram <a href="https://instagram.com/floumallorca" target="_blank" rel="noopener">@floumallorca</a></p>
     </div>
   </section>
 
