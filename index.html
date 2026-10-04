@@ -362,6 +362,40 @@
     font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
     color: var(--terracota-dark); background: rgba(242,169,62,0.22);
   }
+  .perks-card {
+    position: relative; overflow: hidden; max-width: 640px; margin: 44px auto 0;
+    background: linear-gradient(180deg, #fffaf0, #fdf3e2);
+    border: 2.5px solid var(--terracota-dark); border-radius: 22px;
+    box-shadow: 7px 7px 0 var(--gold), 0 18px 34px -16px rgba(74,48,32,0.35);
+  }
+  .perks-card::before {
+    content: ''; position: absolute; inset: 22px 8px 8px; border: 1.5px dashed rgba(232,112,60,0.5);
+    border-radius: 15px; pointer-events: none;
+  }
+  .perks-stripes {
+    height: 16px;
+    background: linear-gradient(180deg, var(--terracota) 0 34%, var(--gold) 34% 67%, var(--coral) 67% 100%);
+  }
+  .perks-list { list-style: none; margin: 0; padding: 14px 22px 20px; position: relative; z-index: 1; }
+  .perks-row { display: flex; align-items: center; gap: 18px; padding: 16px 6px; }
+  .perks-row + .perks-row { border-top: 2px dotted rgba(232,112,60,0.4); }
+  .perks-icon {
+    flex: 0 0 auto; width: 68px; height: 68px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-size: 30px; line-height: 1; background: radial-gradient(circle at 35% 30%, #fffaf0, #fbe3b8);
+    border: 2.5px solid var(--terracota); box-shadow: 3px 3px 0 var(--gold);
+  }
+  .perks-pair { font-size: 25px; white-space: nowrap; letter-spacing: -4px; padding-right: 4px; }
+  .perks-row p { font-size: 18px; line-height: 1.5; color: var(--text-dark); text-align: left; }
+  .perks-row strong { color: var(--bark); font-weight: 700; }
+  .perks-new { background: linear-gradient(90deg, rgba(242,169,62,0.2), rgba(242,169,62,0.04)); border-radius: 14px; }
+  @media (max-width: 600px) {
+    .perks-card { margin: 36px 4px 0; box-shadow: 5px 5px 0 var(--gold), 0 14px 28px -14px rgba(74,48,32,0.35); }
+    .perks-list { padding: 10px 14px 16px; }
+    .perks-row { gap: 12px; padding: 14px 2px; }
+    .perks-icon { width: 54px; height: 54px; font-size: 24px; }
+    .perks-pair { font-size: 19px; letter-spacing: -3px; }
+    .perks-row p { font-size: 16.5px; }
+  }
   .programa-perks {
     margin-top: 32px; text-align: center;
     font-size: 14px; color: var(--text-mid);
@@ -710,7 +744,14 @@
         </div>
       </div>
     </div>
-    <p class="programa-perks">👧👦 Hay un espacio precioso para los niños. Un mini bosque mágico. Con dos personas acompañantes durante el evento. Entradas niños 5€.<br>💧 Agua gratis durante todo el evento.<br>🆕 Mercado de artesanos, masajes y Zona Holística durante todo el día! ✨</p>
+    <div class="perks-card">
+      <div class="perks-stripes" aria-hidden="true"></div>
+      <ul class="perks-list">
+        <li class="perks-row"><span class="perks-icon perks-pair" aria-hidden="true">👧👦</span><p>Hay un <strong>espacio precioso para los niños</strong>. Un mini bosque mágico. Con <strong>dos personas acompañantes durante el evento</strong>. <strong>Entradas niños 5€.</strong></p></li>
+        <li class="perks-row"><span class="perks-icon" aria-hidden="true">💧</span><p><strong>Agua gratis durante todo el evento.</strong></p></li>
+        <li class="perks-row perks-new"><span class="perks-icon" aria-hidden="true">🆕</span><p><strong>Mercado de artesanos, masajes y Zona Holística durante todo el día!</strong> ✨</p></li>
+      </ul>
+    </div>
   </section>
 
   <!-- CON-SENTIMIENTOS -->
