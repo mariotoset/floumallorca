@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//FLOU//Ecstatic Dance Mallorca//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:FLOU 2027-02-20
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:20270220@floumallorca.com
+DTSTAMP:20261108T190000Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:💥 FLOU · Ecstatic Dance Mallorca
+LOCATION:TANA Mallorca BioHub\, Carretera S'Esglaieta Santa Maria km 1.3\, 
+ 07110 Buñola\, Mallorca
+DESCRIPTION:Programa y entradas próximamente.\nMás info: https://www.flou
+ mallorca.com
+URL:https://www.floumallorca.com
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//FLOU//Ecstatic Dance Mallorca//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:FLOU Reflexión 28 nov
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:20261128@floumallorca.com
+DTSTAMP:20261108T190000Z
+DTSTART:20261128T093000Z
+DTEND:20261128T183000Z
+SUMMARY:💥 FLOU REFLEXIÓN · Ecstatic Dance Mallorca
+LOCATION:TANA Mallorca BioHub\, Carretera S'Esglaieta Santa Maria km 1.3\, 
+ 07110 Buñola\, Mallorca
+DESCRIPTION:PROGRAMA\n\n10:30 Abrimos puertas 🚪\n11:00 Círculo de apert
+ ura ✨\n11:15 – 11:45 Despertar el FLOU\, con Asia 🦋\n11:45 Ecstatic
+  Dance con DJ Cactus 🌵💃🕺\n13:45 Descanso y comida con Beldi - Hab
+ ibi Food 🥗\n14:00 – 15:00 Taller Acroyoga y Circo para niños 🎪
+ 🤸\n15:00 Medicina del cacao y cantos del corazón con Carlos Marcús y 
+ Jesús Jota 💜\n16:30 – 17:00 Despertar el FLOU\, con Asia 🦋\n17:00
+  Ecstatic Dance con DJ Belen Pacifico 🕺💃\n19:00 Baño de sonido con 
+ Carlos Marcús y Subagh. Integración y cierre 🔔\n19:30 Fin ✨\n\n🌳
+  Mini bosque mágico para toda la familia\n💧🍇 Agua y fruta gratis du
+ rante todo el evento\n🪔 Mercado de artesanos\, masajes y Rincón del bi
+ enestar durante todo el día 🌿\n\nAntes de las elecciones generales\, e
+ s necesario un día de baile y reflexión. Menos discursos y más movimien
+ to. ¡VOTA FLOU!\n\nEntradas online desde 20€. En puerta: todo el día 3
+ 0€\, a partir de las 15h 20€. Niños 5€ en puerta (bosque mágico\, 
+ recorrido sensorial\, manualidades\, taller de circo y juegos).\n\nMás in
+ fo: https://www.floumallorca.com\nEntradas: https://brainpas.com/flou/flou
+ -reflexion
+URL:https://www.floumallorca.com
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

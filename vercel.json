@@ -27,5 +27,20 @@
       "destination": "https://www.google.com/calendar/render?action=TEMPLATE&text=%F0%9F%92%A5%20FLOU%20REFLEXI%C3%93N%20%C2%B7%20Ecstatic%20Dance%20Mallorca&dates=20261128T093000Z/20261128T183000Z&details=PROGRAMA%0A%0A10%3A30%20Abrimos%20puertas%20%F0%9F%9A%AA%0A11%3A00%20C%C3%ADrculo%20de%20apertura%20%E2%9C%A8%0A11%3A15%20%E2%80%93%2011%3A45%20Despertar%20el%20FLOU%2C%20con%20Asia%20%F0%9F%A6%8B%0A11%3A45%20Ecstatic%20Dance%20con%20DJ%20Cactus%20%F0%9F%8C%B5%F0%9F%92%83%F0%9F%95%BA%0A13%3A45%20Descanso%20y%20comida%20con%20Beldi%20-%20Habibi%20Food%20%F0%9F%A5%97%0A14%3A00%20%E2%80%93%2015%3A00%20Taller%20Acroyoga%20y%20Circo%20para%20ni%C3%B1os%20%F0%9F%8E%AA%F0%9F%A4%B8%0A15%3A00%20Medicina%20del%20cacao%20y%20cantos%20del%20coraz%C3%B3n%20con%20Carlos%20Marc%C3%BAs%20y%20Jes%C3%BAs%20Jota%20%F0%9F%92%9C%0A16%3A30%20%E2%80%93%2017%3A00%20Despertar%20el%20FLOU%2C%20con%20Asia%20%F0%9F%A6%8B%0A17%3A00%20Ecstatic%20Dance%20con%20DJ%20Belen%20Pacifico%20%F0%9F%95%BA%F0%9F%92%83%0A19%3A00%20Ba%C3%B1o%20de%20sonido%20con%20Carlos%20Marc%C3%BAs%20y%20Subagh.%20Integraci%C3%B3n%20y%20cierre%20%F0%9F%94%94%0A19%3A30%20Fin%20%E2%9C%A8%0A%0A%F0%9F%8C%B3%20Mini%20bosque%20m%C3%A1gico%20para%20toda%20la%20familia%0A%F0%9F%92%A7%F0%9F%8D%87%20Agua%20y%20fruta%20gratis%20durante%20todo%20el%20evento%0A%F0%9F%AA%94%20Mercado%20de%20artesanos%2C%20masajes%20y%20Rinc%C3%B3n%20del%20bienestar%20durante%20todo%20el%20d%C3%ADa%20%F0%9F%8C%BF%0A%0AAntes%20de%20las%20elecciones%20generales%2C%20es%20necesario%20un%20d%C3%ADa%20de%20baile%20y%20reflexi%C3%B3n.%20Menos%20discursos%20y%20m%C3%A1s%20movimiento.%20%C2%A1VOTA%20FLOU%21%0A%0AEntradas%20online%20desde%2020%E2%82%AC.%20En%20puerta%3A%20todo%20el%20d%C3%ADa%2030%E2%82%AC%2C%20a%20partir%20de%20las%2015h%2020%E2%82%AC.%20Ni%C3%B1os%205%E2%82%AC%20en%20puerta%20%28bosque%20m%C3%A1gico%2C%20recorrido%20sensorial%2C%20manualidades%2C%20taller%20de%20circo%20y%20juegos%29.%0A%0AM%C3%A1s%20info%3A%20https%3A%2F%2Fwww.floumallorca.com%0AEntradas%3A%20https%3A%2F%2Fbrainpas.com%2Fflou%2Fflou-reflexion&location=TANA%20Mallorca%20BioHub%2C%20Carretera%20S%27Esglaieta%20Santa%20Maria%20km%201.3%2C%2007110%20Bu%C3%B1ola%2C%20Mallorca",
       "permanent": false
     }
+  ],
+  "headers": [
+    {
+      "source": "/assets/ics/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/calendar; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
   ]
 }
