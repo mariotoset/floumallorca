@@ -441,9 +441,12 @@
   .reglas-list li + li { border-top: 1px solid rgba(232,112,60,0.18); }
   .reglas-list li::before { content: '✦'; color: var(--gold); font-size: 12px; }
   .flous-card { max-width: 440px; padding: 40px 24px 36px; }
-  .flous-dates { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px 12px; margin-top: 28px; }
+  .flous-dates { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 12px; margin-top: 22px; }
   .flous-place { margin-top: 6px; font-size: 11px; letter-spacing: 0.16em; padding-left: 0.16em; text-transform: uppercase; color: var(--text-mid); }
-  .flous-date { display: flex; flex-direction: column; align-items: center; }
+  .flous-date { display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit; border-radius: 14px; padding: 6px 0; transition: transform .2s ease, background .2s ease; }
+  .flous-date:hover { transform: translateY(-2px); background: rgba(242,169,62,0.14); }
+  .flous-hint { margin-top: 14px; font-size: 13px; color: var(--text-mid); font-style: italic; }
+  .flous-add { margin-top: 8px; font-size: 11px; color: var(--terracota-dark); text-decoration: underline; text-underline-offset: 2px; }
   .flous-day {
     font-family: 'Playfair Display', serif; font-style: italic; font-weight: 700;
     font-size: 54px; line-height: 1; color: var(--terracota);
@@ -821,13 +824,14 @@
       <span class="reglas-corner tl">✦</span><span class="reglas-corner tr">✦</span>
       <span class="reglas-corner bl">✦</span><span class="reglas-corner br">✦</span>
       <h2 class="reglas-title">PRÓXIMOS <span>FLOUS</span></h2>
+      <p class="flous-hint">Toca una fecha para añadirla a tu calendario</p>
       <div class="flous-dates">
-        <div class="flous-date"><span class="flous-day">19</span><span class="flous-month">Diciembre</span><span class="flous-place">TANA · Buñola</span></div>
-        <div class="flous-date"><span class="flous-day">1</span><span class="flous-month">Enero</span><span class="flous-place">TANA · Buñola</span></div>
-        <div class="flous-date"><span class="flous-day">30</span><span class="flous-month">Enero</span><span class="flous-place">TANA · Buñola</span></div>
-        <div class="flous-date"><span class="flous-day">20</span><span class="flous-month">Febrero</span><span class="flous-place">TANA · Buñola</span></div>
-        <div class="flous-date"><span class="flous-day">20</span><span class="flous-month">Marzo</span><span class="flous-place">TANA · Buñola</span></div>
-        <div class="flous-date"><span class="flous-day">17</span><span class="flous-month">Abril</span><span class="flous-place">TANA · Buñola</span></div>
+        <a class="flous-date" href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=%F0%9F%92%A5%20FLOU%20%C2%B7%20Ecstatic%20Dance%20Mallorca&amp;dates=20261219/20261220&amp;details=Programa%20y%20entradas%20pr%C3%B3ximamente.%0AM%C3%A1s%20info%3A%20https%3A%2F%2Fwww.floumallorca.com&amp;location=TANA%20Mallorca%20BioHub%2C%20Carretera%20S%27Esglaieta%20Santa%20Maria%20km%201.3%2C%2007110%20Bu%C3%B1ola%2C%20Mallorca" target="_blank" rel="noopener" aria-label="Añadir al calendario: 19 de diciembre, TANA Buñola"><span class="flous-day">19</span><span class="flous-month">Diciembre</span><span class="flous-place">TANA · Buñola</span><span class="flous-add">+ Añadir al calendario</span></a>
+        <a class="flous-date" href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=%F0%9F%92%A5%20FLOU%20%C2%B7%20Ecstatic%20Dance%20Mallorca&amp;dates=20270101/20270102&amp;details=Programa%20y%20entradas%20pr%C3%B3ximamente.%0AM%C3%A1s%20info%3A%20https%3A%2F%2Fwww.floumallorca.com&amp;location=TANA%20Mallorca%20BioHub%2C%20Carretera%20S%27Esglaieta%20Santa%20Maria%20km%201.3%2C%2007110%20Bu%C3%B1ola%2C%20Mallorca" target="_blank" rel="noopener" aria-label="Añadir al calendario: 1 de enero, TANA Buñola"><span class="flous-day">1</span><span class="flous-month">Enero</span><span class="flous-place">TANA · Buñola</span><span class="flous-add">+ Añadir al calendario</span></a>
+        <a class="flous-date" href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=%F0%9F%92%A5%20FLOU%20%C2%B7%20Ecstatic%20Dance%20Mallorca&amp;dates=20270130/20270131&amp;details=Programa%20y%20entradas%20pr%C3%B3ximamente.%0AM%C3%A1s%20info%3A%20https%3A%2F%2Fwww.floumallorca.com&amp;location=TANA%20Mallorca%20BioHub%2C%20Carretera%20S%27Esglaieta%20Santa%20Maria%20km%201.3%2C%2007110%20Bu%C3%B1ola%2C%20Mallorca" target="_blank" rel="noopener" aria-label="Añadir al calendario: 30 de enero, TANA Buñola"><span class="flous-day">30</span><span class="flous-month">Enero</span><span class="flous-place">TANA · Buñola</span><span class="flous-add">+ Añadir al calendario</span></a>
+        <a class="flous-date" href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=%F0%9F%92%A5%20FLOU%20%C2%B7%20Ecstatic%20Dance%20Mallorca&amp;dates=20270220/20270221&amp;details=Programa%20y%20entradas%20pr%C3%B3ximamente.%0AM%C3%A1s%20info%3A%20https%3A%2F%2Fwww.floumallorca.com&amp;location=TANA%20Mallorca%20BioHub%2C%20Carretera%20S%27Esglaieta%20Santa%20Maria%20km%201.3%2C%2007110%20Bu%C3%B1ola%2C%20Mallorca" target="_blank" rel="noopener" aria-label="Añadir al calendario: 20 de febrero, TANA Buñola"><span class="flous-day">20</span><span class="flous-month">Febrero</span><span class="flous-place">TANA · Buñola</span><span class="flous-add">+ Añadir al calendario</span></a>
+        <a class="flous-date" href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=%F0%9F%92%A5%20FLOU%20%C2%B7%20Ecstatic%20Dance%20Mallorca&amp;dates=20270320/20270321&amp;details=Programa%20y%20entradas%20pr%C3%B3ximamente.%0AM%C3%A1s%20info%3A%20https%3A%2F%2Fwww.floumallorca.com&amp;location=TANA%20Mallorca%20BioHub%2C%20Carretera%20S%27Esglaieta%20Santa%20Maria%20km%201.3%2C%2007110%20Bu%C3%B1ola%2C%20Mallorca" target="_blank" rel="noopener" aria-label="Añadir al calendario: 20 de marzo, TANA Buñola"><span class="flous-day">20</span><span class="flous-month">Marzo</span><span class="flous-place">TANA · Buñola</span><span class="flous-add">+ Añadir al calendario</span></a>
+        <a class="flous-date" href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=%F0%9F%92%A5%20FLOU%20%C2%B7%20Ecstatic%20Dance%20Mallorca&amp;dates=20270417/20270418&amp;details=Programa%20y%20entradas%20pr%C3%B3ximamente.%0AM%C3%A1s%20info%3A%20https%3A%2F%2Fwww.floumallorca.com&amp;location=TANA%20Mallorca%20BioHub%2C%20Carretera%20S%27Esglaieta%20Santa%20Maria%20km%201.3%2C%2007110%20Bu%C3%B1ola%2C%20Mallorca" target="_blank" rel="noopener" aria-label="Añadir al calendario: 17 de abril, TANA Buñola"><span class="flous-day">17</span><span class="flous-month">Abril</span><span class="flous-place">TANA · Buñola</span><span class="flous-add">+ Añadir al calendario</span></a>
       </div>
       <a class="flous-sub" href="https://calendar.google.com/calendar/u/0?cid=bWFsbG9yY2FmbG91QGdtYWlsLmNvbQ" target="_blank" rel="noopener">Suscríbete al calendario de FLOU</a>
     </div>
