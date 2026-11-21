@@ -967,7 +967,9 @@
     .nav-links a:not(.nav-btn) { display: none; }
     .section { padding: 64px 20px; }
   }
-  .nav-links a.lang { display: inline; }
+  .nav-links a.lang, .nav-links a.nl { display: inline; }
+  @media (max-width: 768px) { .nav-links a.nl, .nav-links a.lang { font-size: 11px; letter-spacing: 0.04em; } .nav-links { gap: 11px; } nav { padding: 14px 14px; } .logo { font-size: 24px; } .nav-btn { padding: 8px 14px; } }
+  @media (max-width: 440px) { .nav-links { gap: 8px; } .nav-links a.nl, .nav-links a.lang { font-size: 10px; letter-spacing: 0.02em; } nav { padding: 12px 10px; } .logo { font-size: 21px; } .nav-btn { padding: 7px 10px; font-size: 10.5px !important; letter-spacing: 0.03em !important; } }
   @media (max-width: 768px) { .nav-links { gap: 18px; } }
 </style>
 </head>
@@ -977,6 +979,8 @@
 <nav>
   <div class="logo">fl<span>ou</span></div>
   <div class="nav-links">
+    <a class="nl" href="https://chat.whatsapp.com/Hai5Ddr8bKoGeg4b7ib6Fi?s=cl&amp;p=a&amp;ilr=1" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="nl" href="https://maps.app.goo.gl/2XiogTmsKxBnZzs47" target="_blank" rel="noopener">Ubicación</a>
     <a class="lang" href="/en/" hreflang="en" lang="en">EN</a>
     <a href="https://brainpas.com/flou/flou-reflexion" target="_blank" rel="noopener" class="nav-btn">Entradas</a>
   </div>
