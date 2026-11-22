@@ -500,6 +500,8 @@
     letter-spacing: 0.05em;
   }
   .logo span { color: var(--terracota); font-style: italic; }
+  .logo-img{height:66px;width:auto;display:block}
+  @media (max-width: 440px){.logo-img{height:50px}}
   .nav-links { display: flex; gap: 32px; align-items: center; }
   .nav-links a {
     text-decoration: none; color: var(--text-mid);
@@ -1014,7 +1016,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="logo">fl<span>ou</span></div>
+  <a class="logo" href="/" aria-label="FLOU, inicio"><img class="logo-img" src="/assets/logo-flou.svg" alt="FLOU" width="58" height="66"></a>
   <div class="nav-links">
     <a class="nl" href="https://chat.whatsapp.com/Hai5Ddr8bKoGeg4b7ib6Fi?s=cl&amp;p=a&amp;ilr=1" target="_blank" rel="noopener">WhatsApp</a>
     <a class="nl" href="https://maps.app.goo.gl/2XiogTmsKxBnZzs47" target="_blank" rel="noopener">Location</a>
