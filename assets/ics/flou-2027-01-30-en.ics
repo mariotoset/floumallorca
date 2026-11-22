@@ -7,16 +7,20 @@ X-WR-CALNAME:FLOU 2027-01-30
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:20270130-en@floumallorca.com
+SEQUENCE:1
 DTSTAMP:20261108T190000Z
 DTSTART;VALUE=DATE:20270130
 DTEND;VALUE=DATE:20270131
 SUMMARY:💥 FLOU · Ecstatic Dance Mallorca
 LOCATION:TANA Mallorca BioHub\, Carretera S'Esglaieta Santa Maria km 1.3\, 
  07110 Buñola\, Mallorca
-DESCRIPTION:Program and tickets coming soon.\nMore info: https://www.flouma
- llorca.com/en/
+DESCRIPTION:Guest artist: DJ Eridu (@dj.eridu https://www.instagram.com/dj.
+ eridu/)
+Program and tickets coming soon.\nMore info: https://www.floumallo
+ rca.com/en/
 URL:https://www.floumallorca.com/en/
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 END:VCALENDAR
+

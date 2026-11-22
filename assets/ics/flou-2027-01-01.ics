@@ -7,16 +7,20 @@ X-WR-CALNAME:FLOU 2027-01-01
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:20270101@floumallorca.com
+SEQUENCE:1
 DTSTAMP:20261108T190000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:💥 FLOU · Ecstatic Dance Mallorca
 LOCATION:TANA Mallorca BioHub\, Carretera S'Esglaieta Santa Maria km 1.3\, 
  07110 Buñola\, Mallorca
-DESCRIPTION:Programa y entradas próximamente.\nMás info: https://www.flou
- mallorca.com
+DESCRIPTION:Artista invitado: DJ Gnomius (@subagh13 https://www.instagram.c
+ om/subagh13/)
+Programa y entradas próximamente.\nMás info: https://www.f
+ loumallorca.com
 URL:https://www.floumallorca.com
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 END:VCALENDAR
+
